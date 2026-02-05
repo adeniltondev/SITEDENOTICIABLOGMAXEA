@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user === ADMIN_USER && $pass === ADMIN_PASS) {
         $_SESSION['admin_logged_in'] = true;
-        header('Location: /admin/dashboard.php');
+        header('Location: ' . base_url('admin/dashboard.php'));
         exit;
     }
     $error = 'Usuário ou senha inválidos.';

@@ -30,7 +30,7 @@ include __DIR__ . '/includes/header.php';
                     <p><?php echo e($featured['excerpt']); ?></p>
                     <div class="hero__meta">
                         <span><?php echo date('d/m/Y H:i', strtotime($featured['published_at'])); ?></span>
-                        <a class="btn" href="/noticia.php?id=<?php echo e($featured['id']); ?>">Ler agora</a>
+                        <a class="btn" href="<?php echo e(base_url('noticia.php')); ?>?id=<?php echo e($featured['id']); ?>">Ler agora</a>
                     </div>
                 </div>
             </article>
@@ -71,7 +71,7 @@ include __DIR__ . '/includes/header.php';
                         <p><?php echo e($item['excerpt']); ?></p>
                         <div class="news-card__footer">
                             <span><?php echo date('d/m/Y H:i', strtotime($item['published_at'])); ?></span>
-                            <a class="link" href="/noticia.php?id=<?php echo e($item['id']); ?>">Ler</a>
+                            <a class="link" href="<?php echo e(base_url('noticia.php')); ?>?id=<?php echo e($item['id']); ?>">Ler</a>
                         </div>
                     </div>
                 </article>
@@ -89,7 +89,7 @@ include __DIR__ . '/includes/header.php';
                     <span class="tag tag--live">Ao Vivo</span>
                     <h3><?php echo e($live['title']); ?></h3>
                     <p><?php echo e($live['content']); ?></p>
-                    <a class="btn btn--ghost" href="/noticia.php?id=<?php echo e($live['id']); ?>">Acompanhar</a>
+                    <a class="btn btn--ghost" href="<?php echo e(base_url('noticia.php')); ?>?id=<?php echo e($live['id']); ?>">Acompanhar</a>
                 </div>
                 <div class="live__meta">
                     <p>Atualizado em</p>

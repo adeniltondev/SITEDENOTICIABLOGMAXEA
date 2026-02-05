@@ -8,6 +8,13 @@ function start_session_if_needed(): void {
 define('DATA_FILE', __DIR__ . '/../data/news.json');
 define('ADMIN_USER', 'admin');
 define('ADMIN_PASS', 'admin123');
+define('BASE_PATH', '/portaldenoticia');
+
+function base_url(string $path = ''): string {
+    $base = rtrim(BASE_PATH, '/');
+    $path = '/' . ltrim($path, '/');
+    return $base . $path;
+}
 
 function readNews(): array {
     if (!file_exists(DATA_FILE)) {
@@ -73,7 +80,7 @@ function isAdmin(): bool {
 
 function requireAdmin(): void {
     if (!isAdmin()) {
-        header('Location: /admin/login.php');
+        header('Location: ' . base_url('admin/login.php'));
         exit;
     }
 }

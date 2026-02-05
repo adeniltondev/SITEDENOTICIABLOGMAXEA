@@ -11,7 +11,7 @@ if ($action === 'delete') {
         return $item['id'] !== $id;
     }));
     saveNews($news);
-    header('Location: /admin/dashboard.php');
+    header('Location: ' . base_url('admin/dashboard.php'));
     exit;
 }
 
@@ -69,8 +69,8 @@ if ($action === 'save') {
     }
 
     saveNews($news);
-    header('Location: /admin/dashboard.php');
+    header('Location: ' . base_url('admin/dashboard.php'));
     exit;
 }
 
-header('Location: /admin/dashboard.php');
+header('Location: ' . base_url('admin/dashboard.php'));

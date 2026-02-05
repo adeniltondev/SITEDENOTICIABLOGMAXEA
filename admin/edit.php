@@ -11,7 +11,7 @@ include __DIR__ . '/../includes/header.php';
 <main class="container admin">
     <div class="card admin__card">
         <h2><?php echo e($pageTitle); ?></h2>
-        <form class="form" method="post" action="/admin/save.php">
+        <form class="form" method="post" action="<?php echo e(base_url('admin/save.php')); ?>">
             <input type="hidden" name="action" value="save" />
             <input type="hidden" name="id" value="<?php echo e($item['id'] ?? ''); ?>" />
 
@@ -36,7 +36,7 @@ include __DIR__ . '/../includes/header.php';
             </div>
 
             <button class="btn" type="submit">Salvar</button>
-            <a class="btn btn--ghost" href="/admin/dashboard.php">Voltar</a>
+            <a class="btn btn--ghost" href="<?php echo e(base_url('admin/dashboard.php')); ?>">Voltar</a>
         </form>
     </div>
 </main>

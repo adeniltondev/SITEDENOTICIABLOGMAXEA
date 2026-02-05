@@ -10,8 +10,8 @@ include __DIR__ . '/../includes/header.php';
     <div class="admin__header">
         <h2>Gerenciar Notícias</h2>
         <div>
-            <a class="btn" href="/admin/edit.php">Nova notícia</a>
-            <a class="btn btn--ghost" href="/admin/logout.php">Sair</a>
+            <a class="btn" href="<?php echo e(base_url('admin/edit.php')); ?>">Nova notícia</a>
+            <a class="btn btn--ghost" href="<?php echo e(base_url('admin/logout.php')); ?>">Sair</a>
         </div>
     </div>
 
@@ -28,8 +28,8 @@ include __DIR__ . '/../includes/header.php';
                 <span><?php echo e($item['category']); ?></span>
                 <span><?php echo date('d/m/Y H:i', strtotime($item['published_at'])); ?></span>
                 <span class="table__actions">
-                    <a class="link" href="/admin/edit.php?id=<?php echo e($item['id']); ?>">Editar</a>
-                    <form method="post" action="/admin/save.php" onsubmit="return confirm('Excluir esta notícia?');">
+                    <a class="link" href="<?php echo e(base_url('admin/edit.php')); ?>?id=<?php echo e($item['id']); ?>">Editar</a>
+                    <form method="post" action="<?php echo e(base_url('admin/save.php')); ?>" onsubmit="return confirm('Excluir esta notícia?');">
                         <input type="hidden" name="action" value="delete" />
                         <input type="hidden" name="id" value="<?php echo e($item['id']); ?>" />
                         <button class="link link--danger" type="submit">Excluir</button>

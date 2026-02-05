@@ -20,7 +20,7 @@ include __DIR__ . '/includes/header.php';
                 <p><?php echo nl2br(e($item['content'])); ?></p>
             </div>
             <div class="article__footer">
-                <a class="btn btn--ghost" href="/">Voltar</a>
+                <a class="btn btn--ghost" href="<?php echo e(base_url('')); ?>">Voltar</a>
             </div>
         </article>
     <?php else: ?>

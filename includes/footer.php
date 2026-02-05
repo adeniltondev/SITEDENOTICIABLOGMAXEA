@@ -18,6 +18,6 @@
         <span>© <?php echo date('Y'); ?> Blog do Max. Todos os direitos reservados.</span>
     </div>
 </footer>
-<script src="/assets/js/app.js"></script>
+<script src="<?php echo e(base_url('assets/js/app.js')); ?>"></script>
 </body>
 </html>
