@@ -8,7 +8,7 @@ function start_session_if_needed(): void {
 define('DATA_FILE', __DIR__ . '/../data/news.json');
 define('ADMIN_USER', 'admin');
 define('ADMIN_PASS', 'admin123');
-define('BASE_PATH', '/portaldenoticia');
+define('BASE_PATH', '');
 
 function base_url(string $path = ''): string {
     $base = rtrim(BASE_PATH, '/');
