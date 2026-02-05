@@ -1,0 +1,50 @@
+[
+    {
+        "id": "news_1",
+        "title": "Cidade inaugura novo centro de inovação",
+        "category": "Cidades",
+        "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop",
+        "excerpt": "O espaço vai abrigar startups e projetos de impacto social.",
+        "content": "A prefeitura inaugurou hoje o novo centro de inovação com foco em tecnologia, educação e impacto social. O espaço conta com auditórios, coworking e laboratórios criativos.",
+        "is_featured": true,
+        "is_live": false,
+        "published_at": "2026-02-05 08:30:00",
+        "slug": "cidade-inaugura-novo-centro-de-inovacao"
+    },
+    {
+        "id": "news_2",
+        "title": "Mercado regional projeta crescimento acima da média",
+        "category": "Economia",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
+        "excerpt": "Empresas locais registram aumento nas exportações.",
+        "content": "Relatório econômico aponta que o mercado regional deve crescer 4,2% em 2026, impulsionado por indústria e agronegócio.",
+        "is_featured": false,
+        "is_live": true,
+        "published_at": "2026-02-05 09:05:00",
+        "slug": "mercado-regional-projeta-crescimento-acima-da-media"
+    },
+    {
+        "id": "news_3",
+        "title": "Esporte: time local vence clássico emocionante",
+        "category": "Esportes",
+        "image": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=1200&auto=format&fit=crop",
+        "excerpt": "Com gols no segundo tempo, equipe garante liderança.",
+        "content": "O time local venceu por 2 a 1 em jogo histórico. A torcida lotou o estádio e comemorou até tarde.",
+        "is_featured": false,
+        "is_live": false,
+        "published_at": "2026-02-05 07:20:00",
+        "slug": "esporte-time-local-vence-classico-emocionante"
+    },
+    {
+        "id": "news_4",
+        "title": "Cultura: festival de música movimenta a cidade",
+        "category": "Cultura",
+        "image": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=1200&auto=format&fit=crop",
+        "excerpt": "Evento reúne artistas nacionais e regionais.",
+        "content": "O festival reúne shows gratuitos, feiras criativas e gastronomia local, movimentando o turismo.",
+        "is_featured": false,
+        "is_live": false,
+        "published_at": "2026-02-05 06:10:00",
+        "slug": "cultura-festival-de-musica-movimenta-a-cidade"
+    }
+]
